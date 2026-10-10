@@ -4,667 +4,464 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#17130f">
-<meta name="description" content="HK Heritage Works — Traditional Rajputana haveli designing, heritage architecture, restoration, carved jharokhas and royal architectural craftsmanship.">
-<title>HK Heritage Works | The Art of Rajputana Heritage</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="theme-color" content="#18110c">
+<meta name="description" content="HK Heritage Works — Rajputana heritage havelis, carved jharokhas, stone jali, sandstone architecture, traditional mouldings and heritage craftsmanship.">
+<title>HK Heritage Works | Rajputana Heritage Architecture</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
- --bg:#17130f;--bg2:#211a14;--gold:#c6a16b;--gold2:#e3c89c;
- --cream:#f2e9da;--muted:#b7aa98;--line:rgba(222,190,142,.22);
- --serif:'Cormorant Garamond',Georgia,serif;
- --sans:'DM Sans',sans-serif;
-}
+:root{--bg:#18110c;--panel:#251910;--gold:#c9a36c;--cream:#f3e7d3;--muted:#bca991;--line:#493522;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:85px}
-body{background:var(--bg);color:var(--cream);font-family:var(--sans);line-height:1.65;overflow-x:hidden}
+body{background:var(--bg);color:var(--cream);font-family:var(--sans);line-height:1.7}
+img{width:100%;height:100%;object-fit:cover;display:block}
 a{color:inherit;text-decoration:none}
 button,input,textarea,select{font:inherit}
-img{display:block;width:100%;object-fit:cover}
-button{cursor:pointer}
 .container{width:min(1180px,90%);margin:auto}
-.eyebrow{color:var(--gold2);text-transform:uppercase;letter-spacing:3px;font-size:10px;font-weight:700}
-.section{padding:105px 0}
-.section-head{max-width:720px;margin:0 auto 48px;text-align:center}
-.section-head h2{font:500 clamp(38px,5vw,62px)/1.05 var(--serif);margin:13px 0 18px}
-.section-head p{color:var(--muted);font-size:14px;max-width:580px;margin:auto}
-.gold{color:var(--gold2)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:14px 23px;border:1px solid var(--gold);font-size:10px;letter-spacing:1.6px;text-transform:uppercase;font-weight:700;transition:.3s;background:var(--gold);color:#17130f}
-.btn:hover{background:transparent;color:var(--gold2);transform:translateY(-3px)}
-.btn-outline{background:transparent;color:var(--cream);border-color:rgba(226,200,156,.55)}
-.btn-outline:hover{background:var(--gold);color:#17130f}
-.topbar{background:#0f0d0b;color:var(--muted);font-size:10px;padding:9px 0;border-bottom:1px solid rgba(255,255,255,.06)}
+section{padding:90px 0}
+.eyebrow{font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+h2{font:500 clamp(39px,5vw,65px)/1.05 var(--serif)}
+.gold{color:var(--gold)}
+p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;background:var(--gold);color:#1b120a;border:1px solid var(--gold);font-size:10px;letter-spacing:1.5px;text-transform:uppercase;font-weight:700;transition:.25s}
+.btn:hover{background:transparent;color:var(--gold)}
+.btn.outline{background:transparent;color:var(--cream)}
+.btn.outline:hover{background:var(--gold);color:#1b120a}
+.section-head{text-align:center;max-width:760px;margin:0 auto 45px}
+.section-head h2{margin:13px 0 18px}
+.section-head p{font-size:13px;max-width:620px;margin:auto}
+.topbar{padding:9px 0;background:#0d0906;font-size:10px;color:var(--muted)}
 .topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-header{height:80px;position:absolute;top:38px;left:0;width:100%;z-index:50;border-bottom:1px solid rgba(255,255,255,.17);transition:.3s}
-header.scrolled{position:fixed;top:0;background:rgba(20,16,12,.96);backdrop-filter:blur(15px)}
-.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.brand{display:flex;align-items:center;gap:12px;min-width:190px}
-.brand-mark{height:46px;width:43px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold2);font:600 23px var(--serif);position:relative}
-.brand-mark:before{content:"";position:absolute;inset:4px;border:1px solid rgba(198,161,107,.4)}
-.brand-name{font:600 22px/1.05 var(--serif);letter-spacing:1px}
-.brand-name small{display:block;font:8px var(--sans);letter-spacing:2.3px;color:var(--gold2);margin-top:6px}
-.nav-links{display:flex;gap:25px;align-items:center}
-.nav-links a{font-size:10px;letter-spacing:1px;color:#e9dece;transition:.2s}
-.nav-links a:hover{color:var(--gold2)}
-.nav .btn{padding:12px 15px}
-.menu-btn{display:none;background:none;color:var(--cream);border:1px solid var(--line);padding:8px 12px}
-.hero{height:min(900px,100svh);min-height:670px;position:relative;display:flex;align-items:center;overflow:hidden;background:#211a14}
-.hero-bg,.hero-shade{position:absolute;inset:0}
-.hero-bg img{height:100%;width:100%;position:absolute;inset:0;opacity:0;transition:opacity 1.2s;transform:scale(1.04)}
-.hero-bg img.active{opacity:1;animation:heroZoom 8s linear}
-@keyframes heroZoom{from{transform:scale(1.04)}to{transform:scale(1.12)}}
-.hero-shade{background:linear-gradient(90deg,rgba(16,12,9,.9),rgba(16,12,9,.61) 52%,rgba(16,12,9,.15)),linear-gradient(0deg,rgba(17,13,9,.65),transparent 55%)}
-.hero-content{position:relative;z-index:2;padding-top:65px;max-width:780px}
-.hero .eyebrow{display:flex;align-items:center;gap:12px}
-.hero .eyebrow:before{content:"";width:38px;height:1px;background:var(--gold)}
-.hero h1{font:500 clamp(54px,8vw,103px)/.94 var(--serif);margin:26px 0}
-.hero h1 em{color:var(--gold2);font-weight:400}
-.hero-content>p{max-width:540px;color:#e0d5c6;font-size:14px;line-height:1.9;margin-bottom:30px}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
-.hero-meta{display:flex;gap:35px;margin-top:50px;padding-top:22px;border-top:1px solid rgba(255,255,255,.2);max-width:560px}
-.hero-meta strong{font:500 28px var(--serif);display:block;color:var(--gold2)}
-.hero-meta span{font-size:9px;letter-spacing:1px;color:#d0c3b2;text-transform:uppercase}
-.hero-side{position:absolute;right:5%;bottom:42px;z-index:2;display:flex;align-items:center;gap:12px;font-size:10px;letter-spacing:2px}
-.hero-side button{border:1px solid rgba(255,255,255,.5);color:white;background:transparent;width:38px;height:38px;font-size:17px}
-.hero-side button:hover{background:var(--gold);color:#111}
-.hero-count{color:var(--gold2)}
-.intro{background:var(--cream);color:#302419;padding:28px 0}
-.intro .container{display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
-.intro p{font:italic 23px var(--serif)}
-.intro span{font-size:9px;letter-spacing:2px;text-transform:uppercase}
-.about-grid{display:grid;grid-template-columns:1fr .85fr;gap:85px;align-items:center}
-.about-visual{position:relative;padding:0 35px 35px 0}
-.about-visual>img{height:540px}
-.about-visual:after{content:"";position:absolute;z-index:0;right:0;bottom:0;width:75%;height:75%;border:1px solid var(--gold);pointer-events:none}
-.about-visual img{position:relative;z-index:1}
-.about-stamp{position:absolute;z-index:2;right:-20px;bottom:50px;width:115px;height:115px;border-radius:50%;background:var(--gold);color:#21170e;display:grid;place-items:center;text-align:center;font:600 18px/1.05 var(--serif);border:5px double #5b3c1d}
-.about-copy h2{font:500 clamp(40px,5vw,62px)/1.03 var(--serif);margin:17px 0 22px}
-.about-copy p{color:var(--muted);font-size:13px;margin-bottom:17px}
-.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0}
-.feature-list div{border-top:1px solid var(--line);padding-top:12px;font-size:12px;color:var(--cream)}
-.feature-list span{color:var(--gold2);margin-right:8px}
-.services{background:#201912}
-.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.service-card{position:relative;min-height:365px;overflow:hidden;background:#2a2118}
-.service-card img{position:absolute;inset:0;height:100%;transition:transform .65s;filter:brightness(.7)}
-.service-card:hover img{transform:scale(1.07);filter:brightness(.52)}
-.service-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,10,8,.95),transparent 75%)}
-.service-body{position:absolute;z-index:2;bottom:0;left:0;padding:26px}
-.service-number{font:italic 20px var(--serif);color:var(--gold2)}
-.service-body h3{font:500 29px/1.05 var(--serif);margin:12px 0}
-.service-body p{color:#d2c4b1;font-size:12px;line-height:1.7}
-.service-body a{display:inline-block;margin-top:15px;color:var(--gold2);font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
-.projects-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;gap:16px}
-.project{position:relative;overflow:hidden;background:#30251a;min-height:290px}
-.project:first-child{grid-row:span 2}
-.project img{height:100%;min-height:290px;position:absolute;transition:transform .7s}
-.project:hover img{transform:scale(1.06)}
-.project:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(13,10,7,.85),transparent 70%)}
-.project-label{position:absolute;bottom:22px;left:22px;z-index:2}
-.project-label span{font-size:9px;color:var(--gold2);letter-spacing:2px;text-transform:uppercase}
-.project-label h3{font:500 29px var(--serif);margin-top:4px}
-.gallery-note{text-align:center;margin-top:30px;color:var(--muted);font-size:12px}
-.products{background:var(--cream);color:#2a2017}
-.products .section-head p{color:#6f6254}
-.products .eyebrow{color:#8c6332}
-.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.product-card{background:#fffaf2;border:1px solid #e3d5c1;transition:transform .3s}
-.product-card:hover{transform:translateY(-7px)}
-.product-card img{height:230px}
-.product-info{padding:19px}
-.product-info span{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:#927044}
-.product-info h3{font:600 25px var(--serif);margin:5px 0}
-.product-info p{font-size:11px;color:#77695a;line-height:1.7}
-.product-info a{display:inline-block;margin-top:15px;border-bottom:1px solid #b79a6c;padding-bottom:4px;font-size:10px;letter-spacing:1px;text-transform:uppercase}
-.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
-.process-card{border-top:1px solid var(--gold);padding-top:22px}
-.process-card .num{font:italic 38px var(--serif);color:var(--gold)}
-.process-card h3{font:500 26px var(--serif);margin:10px 0}
-.process-card p{font-size:12px;color:var(--muted)}
-.quote-band{min-height:390px;position:relative;display:grid;place-items:center;text-align:center;padding:70px 0;background:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2000&q=85') center/cover}
-.quote-band:before{content:"";position:absolute;inset:0;background:rgba(18,13,9,.84)}
-.quote-inner{position:relative;max-width:780px;padding:0 20px}
-.quote-mark{font:80px var(--serif);color:var(--gold);height:65px}
-.quote-inner h2{font:500 clamp(34px,5vw,55px)/1.12 var(--serif);margin:15px 0 20px}
-.quote-inner p{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2)}
-.why{background:#201912}
-.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
-.why-photo img{height:520px}
-.why-copy h2{font:500 clamp(40px,5vw,58px)/1.05 var(--serif);margin:14px 0 18px}
-.why-copy>p{font-size:13px;color:var(--muted);margin-bottom:27px}
-.why-row{display:flex;gap:17px;padding:17px 0;border-top:1px solid var(--line)}
-.why-icon{flex:0 0 38px;height:38px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold2);font-size:18px}
-.why-row h3{font:500 23px var(--serif);margin-bottom:4px}
-.why-row p{font-size:11px;color:var(--muted)}
-.testimonial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.testimonial{padding:28px;border:1px solid var(--line);background:rgba(255,255,255,.018)}
-.stars{color:var(--gold2);letter-spacing:4px;font-size:12px}
-.testimonial blockquote{font:italic 21px/1.45 var(--serif);margin:18px 0 25px;color:#e7dccc}
-.testimonial .person{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold2)}
-.testimonial small{display:block;color:var(--muted);font-size:10px;margin-top:5px}
-.faq{background:#201912}
+header{height:78px;position:absolute;top:36px;width:100%;z-index:50;border-bottom:1px solid #ffffff26}
+header.scrolled{position:fixed;top:0;background:#18110cf5;backdrop-filter:blur(12px)}
+nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px}
+.brand-logo{height:44px;width:44px;border:1px solid var(--gold);display:grid;place-items:center;font:600 23px var(--serif);color:var(--gold);outline:1px solid #c9a36c55;outline-offset:-5px}
+.brand-name{font:600 22px var(--serif);line-height:1.1}
+.brand-name small{display:block;font:8px var(--sans);letter-spacing:2px;color:var(--gold);margin-top:5px}
+.navlinks{display:flex;align-items:center;gap:20px}
+.navlinks a{font-size:10px;letter-spacing:.8px}
+.navlinks a:hover{color:var(--gold)}
+.menu{display:none;background:none;color:var(--cream);border:1px solid var(--line);padding:9px}
+.hero{height:min(900px,100svh);min-height:660px;position:relative;display:flex;align-items:center;overflow:hidden;padding-top:80px}
+.hero-img,.hero-shade{position:absolute;inset:0}
+.hero-img img{position:absolute;inset:0;opacity:0;transition:opacity 1s}
+.hero-img img.active{opacity:1}
+.hero-shade{background:linear-gradient(90deg,#140d08eF 0%,#140d08ad 52%,#140d0830 100%),linear-gradient(0deg,#140d08a8,transparent 60%)}
+.hero-content{position:relative;z-index:2;max-width:760px}
+.hero h1{font:500 clamp(56px,8.5vw,108px)/.89 var(--serif);margin:25px 0}
+.hero h1 em{color:var(--gold);font-weight:400}
+.hero-content p{max-width:570px;color:#e0d1bb;font-size:13px;margin-bottom:27px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-bottom{margin-top:45px;display:flex;gap:30px;flex-wrap:wrap;border-top:1px solid #ffffff3b;padding-top:20px}
+.hero-bottom strong{display:block;font:500 27px var(--serif);color:var(--gold)}
+.hero-bottom span{font-size:9px;letter-spacing:1px;text-transform:uppercase}
+.slide-controls{position:absolute;z-index:3;right:5%;bottom:25px;display:flex;align-items:center;gap:10px}
+.slide-controls button{width:38px;height:38px;background:#18110c99;border:1px solid var(--gold);color:var(--cream)}
+.slide-controls span{font-size:10px;color:var(--gold);letter-spacing:1px}
+.marquee{background:var(--cream);color:#332216;padding:20px 0;text-align:center;font:italic 23px var(--serif)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.about-image{height:550px;position:relative;padding:0 25px 25px 0}
+.about-image:after{content:"";position:absolute;right:0;bottom:0;width:80%;height:80%;border:1px solid var(--gold)}
+.about-image img{position:relative;z-index:1}
+.about-copy h2{margin:15px 0 22px}
+.about-copy p{font-size:13px;margin:0 0 16px}
+.mini-features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:25px 0}
+.mini-features div{border-top:1px solid var(--line);padding-top:12px;font-size:11px}
+.mini-features b{color:var(--gold);margin-right:8px}
+.services{background:#21170f}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service{height:385px;position:relative;overflow:hidden;background:#382516}
+.service img{position:absolute;inset:0;transition:.6s}
+.service:hover img{transform:scale(1.06)}
+.service:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#130b07f2,transparent 75%)}
+.service-copy{position:absolute;z-index:2;bottom:0;padding:24px}
+.service-copy small{color:var(--gold);letter-spacing:2px;font-size:9px}
+.service-copy h3{font:500 31px/1 var(--serif);margin:10px 0}
+.service-copy p{font-size:11px;color:#e1d0b8}
+.service-copy a{display:inline-block;margin-top:12px;color:var(--gold);font-size:10px;letter-spacing:1px}
+.gallery-grid{display:grid;grid-template-columns:1.15fr .85fr .85fr;grid-template-rows:260px 260px;gap:14px}
+.gallery-card{position:relative;overflow:hidden;background:#332216}
+.gallery-card:first-child{grid-row:span 2}
+.gallery-card img{transition:.6s}
+.gallery-card:hover img{transform:scale(1.05)}
+.gallery-card:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#140b09d9,transparent 65%)}
+.gallery-card div{position:absolute;bottom:18px;left:20px;z-index:2}
+.gallery-card small{font-size:9px;letter-spacing:2px;color:var(--gold)}
+.gallery-card h3{font:500 28px var(--serif)}
+.products{background:var(--cream);color:#332216}
+.products .eyebrow{color:#886034}
+.products .section-head p{color:#75624e}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.product{background:#fff8ed;border:1px solid #dfcdb3}
+.product img{height:235px}
+.product-info{padding:17px}
+.product-info small{font-size:9px;color:#916d3f;letter-spacing:1.5px}
+.product-info h3{font:600 25px var(--serif);margin:6px 0}
+.product-info p{color:#786652;font-size:11px}
+.product-info a{display:inline-block;border-bottom:1px solid #b18a54;margin-top:13px;padding-bottom:4px;font-size:10px}
+.craft-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.craft{border-top:1px solid var(--gold);padding-top:15px}
+.craft img{height:260px;margin-bottom:18px}
+.craft h3{font:500 29px var(--serif);margin-bottom:8px}
+.craft p{font-size:12px}
+.process{background:#21170f}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}
+.process-card{border-top:1px solid var(--gold);padding-top:18px}
+.process-card b{font:italic 40px var(--serif);color:var(--gold)}
+.process-card h3{font:500 27px var(--serif);margin:7px 0}
+.process-card p{font-size:12px}
+.banner{position:relative;padding:95px 0;text-align:center;background:url('https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg') center 42%/cover}
+.banner:before{content:"";position:absolute;inset:0;background:#160d08d9}
+.banner .container{position:relative}
+.banner h2{max-width:800px;margin:17px auto 22px}
+.banner p{font-size:11px;letter-spacing:2px;text-transform:uppercase}
+.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.why-image{height:520px}
+.why-copy h2{margin:15px 0 20px}
+.why-copy>p{font-size:13px;margin-bottom:20px}
+.why-item{border-top:1px solid var(--line);padding:15px 0}
+.why-item h3{font:500 25px var(--serif);color:var(--gold)}
+.why-item p{font-size:11px}
+.faq{background:#21170f}
 .faq-wrap{max-width:850px;margin:auto}
 .faq-item{border-bottom:1px solid var(--line)}
-.faq-question{width:100%;background:none;color:var(--cream);border:0;display:flex;align-items:center;justify-content:space-between;gap:20px;text-align:left;padding:23px 0;font:500 24px var(--serif)}
-.faq-question span:last-child{color:var(--gold);font:22px var(--sans)}
-.faq-answer{display:none;color:var(--muted);font-size:13px;line-height:1.8;padding:0 35px 22px 0}
-.faq-item.open .faq-answer{display:block}
-.faq-item.open .faq-question span:last-child{transform:rotate(45deg)}
-.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
-.contact-copy h2{font:500 54px/.98 var(--serif);margin:17px 0 22px}
-.contact-copy>p{font-size:13px;color:var(--muted);margin-bottom:28px}
-.contact-detail{padding:16px 0;border-top:1px solid var(--line)}
-.contact-detail span{display:block;color:var(--gold2);font-size:10px;letter-spacing:2px;text-transform:uppercase}
-.contact-detail a,.contact-detail p{font-size:15px;margin-top:5px}
-.contact-form{background:#211a14;padding:32px;border:1px solid var(--line)}
-.contact-form h3{font:500 33px var(--serif);margin-bottom:22px}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
-.field{display:flex;flex-direction:column;gap:7px}
+.faq-q{width:100%;display:flex;justify-content:space-between;gap:20px;text-align:left;padding:20px 0;background:none;border:0;color:var(--cream);font:500 24px var(--serif)}
+.faq-q span:last-child{color:var(--gold)}
+.faq-a{display:none;color:var(--muted);font-size:12px;padding:0 35px 20px 0}
+.faq-item.open .faq-a{display:block}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+.contact-copy h2{margin:15px 0 20px}
+.contact-copy>p{font-size:13px;margin-bottom:25px}
+.detail{padding:14px 0;border-top:1px solid var(--line)}
+.detail small{display:block;color:var(--gold);letter-spacing:2px;font-size:10px}
+.detail a{font-size:14px}
+.contact-form{padding:30px;background:#21170f;border:1px solid var(--line)}
+.contact-form h3{font:500 34px var(--serif);margin-bottom:20px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{display:flex;flex-direction:column;gap:6px}
 .field.full{grid-column:1/-1}
-.field label{font-size:10px;color:var(--gold2);letter-spacing:1px;text-transform:uppercase}
-.field input,.field select,.field textarea{background:#17130f;border:1px solid #45382a;color:var(--cream);padding:13px;outline:none;width:100%;border-radius:0}
-.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--gold)}
-.field textarea{min-height:115px;resize:vertical}
-.contact-form .btn{width:100%;margin-top:20px}
-.form-hint{font-size:10px;color:var(--muted);margin-top:12px}
-footer{background:#0f0d0b;padding:55px 0 20px}
-.footer-main{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:45px;padding-bottom:35px}
-.footer-about p{font-size:12px;color:var(--muted);max-width:340px;margin-top:18px}
-.footer-col h3{font:500 23px var(--serif);margin-bottom:16px}
-.footer-col a{display:block;color:var(--muted);font-size:11px;margin:10px 0}
-.footer-col a:hover{color:var(--gold2)}
-.footer-bottom{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:#8f8170;font-size:10px}
-.footer-bottom strong{color:var(--gold2);font-weight:500}
-.float-actions{position:fixed;right:20px;bottom:22px;z-index:90;display:flex;flex-direction:column;gap:10px}
-.float-btn{width:53px;height:53px;border-radius:50%;display:grid;place-items:center;color:white;box-shadow:0 5px 25px #0007;transition:.25s}
-.float-btn:hover{transform:scale(1.08)}
-.float-btn svg{width:24px;height:24px;fill:currentColor}
-.float-wa{background:#20b95b}
-.float-call{background:#b58c52}
-.reveal{opacity:0;transform:translateY(25px);transition:opacity .7s,transform .7s}
-.reveal.visible{opacity:1;transform:translateY(0)}
+.field label{font-size:10px;letter-spacing:1px;color:var(--gold)}
+.field input,.field select,.field textarea{width:100%;padding:12px;background:#18110c;color:var(--cream);border:1px solid #4b3725;outline:none}
+.field textarea{height:110px;resize:vertical}
+.contact-form button{width:100%;margin-top:20px}
+.form-note{font-size:10px;margin-top:10px}
+footer{background:#0e0906;padding:50px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr .7fr .8fr;gap:40px;padding-bottom:35px}
+.footer-grid p{font-size:12px;margin-top:15px}
+.footer-grid h3{font:500 25px var(--serif);margin-bottom:12px}
+.footer-grid a{display:block;font-size:11px;color:var(--muted);margin:9px 0}
+.footer-grid a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid var(--line);padding-top:18px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:10px;color:var(--muted)}
+.float-actions{position:fixed;right:17px;bottom:20px;z-index:90;display:flex;flex-direction:column;gap:10px}
+.float-actions a{height:52px;width:52px;border-radius:50%;display:grid;place-items:center;color:white;font-size:22px;box-shadow:0 5px 20px #0007;transition:.2s}
+.float-actions a:hover{transform:scale(1.08)}
+.wa{background:#20b95b}.call{background:#b68b51}
+.reveal{opacity:0;transform:translateY(18px);transition:.6s}
+.reveal.visible{opacity:1;transform:none}
 @media(max-width:900px){
- .nav-links{gap:13px}.nav-links a{font-size:9px}
- .brand{min-width:0}.brand-name{font-size:19px}
+ .navlinks{gap:10px}.navlinks a{font-size:9px}
  .nav>.btn{display:none}
- .about-grid,.why-grid{gap:35px}
+ .about-grid,.why-grid{gap:30px}
  .service-grid{grid-template-columns:repeat(2,1fr)}
- .projects-grid{grid-template-columns:1fr 1fr}
- .project:first-child{grid-row:span 2}
  .product-grid{grid-template-columns:repeat(2,1fr)}
+ .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:270px 220px 220px}
+ .gallery-card:first-child{grid-row:span 2}
  .process-grid{grid-template-columns:repeat(2,1fr)}
- .contact-grid{gap:30px}
 }
 @media(max-width:650px){
- .container{width:90%}.section{padding:73px 0}
- .topbar{font-size:9px}.topbar .container{justify-content:center}
- header{top:39px;height:70px}
- .brand-mark{width:38px;height:41px}
- .brand-name{font-size:18px}.brand-name small{font-size:7px}
- .menu-btn{display:block}
- .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#17130f;padding:22px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0}
- .nav-links.open{display:flex}
- .nav-links a{font-size:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06)}
- .hero{min-height:720px;height:93svh}
- .hero-shade{background:linear-gradient(90deg,rgba(16,12,9,.82),rgba(16,12,9,.3)),linear-gradient(0deg,rgba(16,12,9,.75),transparent)}
- .hero h1{font-size:clamp(55px,14vw,82px)}
- .hero-content>p{font-size:13px}
- .hero-meta{gap:20px;margin-top:35px}
- .hero-meta strong{font-size:24px}.hero-meta span{font-size:8px}
- .hero-side{bottom:18px;right:5%}
- .intro p{font-size:20px}.intro span{font-size:8px}
+ section{padding:70px 0}
+ .topbar .container{justify-content:center}
+ header{height:70px;top:36px}
+ .brand-name{font-size:18px}
+ .menu{display:block}
+ .navlinks{display:none;position:absolute;top:70px;left:0;right:0;padding:15px 5%;background:#18110c;flex-direction:column;align-items:stretch;gap:0}
+ .navlinks.open{display:flex}
+ .navlinks a{font-size:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+ .hero{min-height:720px;height:92svh}
+ .hero h1{font-size:clamp(54px,13vw,78px)}
+ .hero-content p{font-size:12px}
+ .hero-bottom{gap:18px}
+ .hero-bottom strong{font-size:23px}
+ .marquee{font-size:19px}
  .about-grid,.why-grid,.contact-grid{grid-template-columns:1fr}
- .about-grid{gap:45px}
- .about-visual{padding:0 20px 20px 0}
- .about-visual>img{height:390px}
- .about-stamp{right:-5px;width:92px;height:92px;font-size:15px}
+ .about-image{height:390px}
  .service-grid{grid-template-columns:1fr}
- .service-card{min-height:360px}
- .projects-grid{grid-template-columns:1fr 1fr;gap:10px}
- .project,.project img{min-height:235px}
- .project:first-child{grid-column:1/-1;grid-row:auto;height:360px}
- .project-label{left:13px;bottom:15px}
- .project-label h3{font-size:22px}
+ .service{height:360px}
+ .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:350px 220px 220px}
+ .gallery-card:first-child{grid-column:1/-1;grid-row:auto}
+ .gallery-card h3{font-size:23px}
  .product-grid{gap:10px}
- .product-card img{height:175px}
- .product-info{padding:13px}
+ .product img{height:175px}
+ .product-info{padding:12px}
  .product-info h3{font-size:22px}
- .product-info p{font-size:10px}
- .process-grid{gap:25px 17px}
+ .craft-grid{grid-template-columns:1fr}
+ .craft img{height:290px}
+ .process-grid{gap:24px 16px}
  .process-card h3{font-size:23px}
- .why-photo img{height:370px}
- .testimonial-grid{grid-template-columns:1fr}
- .contact-copy h2{font-size:48px}
- .contact-form{padding:21px}
+ .why-image{height:360px}
  .form-grid{grid-template-columns:1fr}
  .field.full{grid-column:auto}
- .footer-main{grid-template-columns:1fr 1fr;gap:30px}
- .footer-about{grid-column:1/-1}
- .float-actions{right:13px;bottom:15px}
- .float-btn{width:48px;height:48px}
+ .contact-form{padding:20px}
+ .footer-grid{grid-template-columns:1fr 1fr;gap:25px}
+ .footer-grid>div:first-child{grid-column:1/-1}
+ .float-actions{right:12px;bottom:14px}
+ .float-actions a{width:47px;height:47px}
 }
-@media(prefers-reduced-motion:reduce){
- *,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}
- .reveal{opacity:1;transform:none}
-}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-
-<div class="topbar">
- <div class="container">
-  <span>RAJPUTANA HERITAGE · TRADITIONAL CRAFTSMANSHIP</span>
-  <span>Call us: +91 96020 79610</span>
- </div>
-</div>
-
+<div class="topbar"><div class="container"><span>RAJPUTANA HERITAGE · STONE CARVING · TRADITIONAL CRAFT</span><span>Call: +91 96020 79610</span></div></div>
 <header id="header">
- <nav class="nav container">
-  <a class="brand" href="#home" aria-label="HK Heritage Works Home">
-   <span class="brand-mark">HK</span>
-   <span class="brand-name">HK HERITAGE<small>WORKS · EST. IN TRADITION</small></span>
-  </a>
-  <div class="nav-links" id="navLinks">
-   <a href="#home">HOME</a>
-   <a href="#about">OUR STORY</a>
-   <a href="#services">SERVICES</a>
-   <a href="#projects">PROJECTS</a>
-   <a href="#products">HERITAGE ELEMENTS</a>
-   <a href="#contact">CONTACT</a>
-  </div>
-  <a class="btn" href="#contact">Start a Project ↗</a>
-  <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">☰ Menu</button>
- </nav>
+<nav class="container">
+<a class="brand" href="#home"><span class="brand-logo">HK</span><span class="brand-name">HK HERITAGE<small>WORKS · ROYAL CRAFTSMANSHIP</small></span></a>
+<div class="navlinks" id="navlinks">
+<a href="#home">HOME</a><a href="#about">OUR STORY</a><a href="#services">SERVICES</a><a href="#gallery">HERITAGE GALLERY</a><a href="#products">HERITAGE ELEMENTS</a><a href="#contact">CONTACT</a>
+</div>
+<a class="btn" href="#contact">Discuss Your Project ↗</a>
+<button class="menu" id="menu" aria-expanded="false">☰ Menu</button>
+</nav>
 </header>
 
 <main>
 <section class="hero" id="home">
- <div class="hero-bg" id="heroBg">
-  <img class="active" src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=2200&q=90" alt="Grand heritage architecture" fetchpriority="high">
-  <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=2200&q=85" alt="Traditional Indian palace architecture">
-  <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=2200&q=85" alt="Elegant heritage-inspired interiors">
- </div>
- <div class="hero-shade"></div>
- <div class="container hero-content">
-  <div class="eyebrow">Preserving the soul of Rajasthan</div>
-  <h1>Where Royal<br>History Meets<br><em>Timeless Art.</em></h1>
-  <p>From magnificent Rajputana havelis to intricately carved architectural details, we bring the timeless beauty of Indian heritage into spaces built to last for generations.</p>
-  <div class="hero-actions">
-   <a class="btn" href="#projects">Explore Our Work ↗</a>
-   <a class="btn btn-outline" href="https://wa.me/919602079610?text=Namaste%20HK%20Heritage%20Works%2C%20I%20want%20to%20discuss%20a%20heritage%20project." target="_blank" rel="noopener">Discuss Your Vision</a>
-  </div>
-  <div class="hero-meta">
-   <div><strong>01</strong><span>Tradition First</span></div>
-   <div><strong>02</strong><span>Crafted With Care</span></div>
-   <div><strong>03</strong><span>Built To Inspire</span></div>
-  </div>
- </div>
- <div class="hero-side">
-  <span class="hero-count" id="heroCount">01 / 03</span>
-  <button id="prevSlide" aria-label="Previous image">←</button>
-  <button id="nextSlide" aria-label="Next image">→</button>
- </div>
-</section>
-
-<div class="intro">
- <div class="container">
-  <p>“A legacy carved in stone. A story told through architecture.”</p>
-  <span>Inspired by the royal heritage of Rajasthan</span>
- </div>
+<div class="hero-img" id="heroImages">
+<img class="active" src="https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg" alt="Intricately carved Jaisalmer heritage jharokha and stone jali">
+<img src="https://chithraarchdesign.com/wp-content/uploads/2025/11/jharokhas_haveli_house_chithraarchdesign_elevation_design1.jpg" alt="Traditional haveli carved sandstone jharokhas and brackets">
+<img src="https://www.arizonahandbook.com/images/PA270183a.jpg" alt="Traditional Rajputana sandstone chhatris and carved pillars">
 </div>
-
-<section class="section" id="about">
- <div class="container about-grid">
-  <div class="about-visual reveal">
-   <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=1000&q=85" alt="Traditional Indian heritage palace facade" loading="lazy">
-   <div class="about-stamp">Rooted in<br>Heritage<br>✦ Rajasthan</div>
-  </div>
-  <div class="about-copy reveal">
-   <div class="eyebrow">Our story · Our identity</div>
-   <h2>Architecture That<br>Honours <span class="gold">Our Roots.</span></h2>
-   <p>At HK Heritage Works, we celebrate the architectural legacy of Rajasthan through traditional haveli designing, heritage-inspired structures and intricate decorative details.</p>
-   <p>Our approach draws inspiration from Rajputana craftsmanship — graceful arches, ornate jharokhas, carved stonework, royal entrances and the timeless charm of traditional courtyards.</p>
-   <p>Every project begins with your vision and a respect for the details that make heritage architecture extraordinary.</p>
-   <div class="feature-list">
-    <div><span>✦</span>Traditional Haveli Design</div>
-    <div><span>✦</span>Rajputana Aesthetics</div>
-    <div><span>✦</span>Detailed Craftsmanship</div>
-    <div><span>✦</span>Personalised Projects</div>
-   </div>
-   <a class="btn btn-outline" href="#services">Discover Our Expertise ↗</a>
-  </div>
- </div>
+<div class="hero-shade"></div>
+<div class="container hero-content">
+<div class="eyebrow">The living legacy of Rajputana</div>
+<h1>Carved in Stone.<br>Rooted in <em>Heritage.</em></h1>
+<p>Celebrating the timeless architecture of Rajasthan — from traditional havelis and ornate jharokhas to carved stone jalis, sandstone pillars, chhatris and heritage mouldings.</p>
+<div class="actions"><a class="btn" href="#gallery">Explore Heritage Work ↗</a><a class="btn outline" href="https://wa.me/919602079610?text=Namaste%20HK%20Heritage%20Works%2C%20I%20want%20to%20discuss%20a%20heritage%20project." target="_blank" rel="noopener">WhatsApp Enquiry</a></div>
+<div class="hero-bottom"><div><strong>01</strong><span>Haveli Design</span></div><div><strong>02</strong><span>Stone Carving</span></div><div><strong>03</strong><span>Heritage Details</span></div></div>
+</div>
+<div class="slide-controls"><span id="slideCount">01 / 03</span><button id="prev" aria-label="Previous image">←</button><button id="next" aria-label="Next image">→</button></div>
 </section>
 
-<section class="section services" id="services">
- <div class="container">
-  <div class="section-head reveal">
-   <div class="eyebrow">What we do</div>
-   <h2>Our <span class="gold">Heritage Expertise</span></h2>
-   <p>Traditional design sensibilities meet thoughtful planning to create architecture with character, depth and a timeless sense of place.</p>
-  </div>
-  <div class="service-grid">
-   <article class="service-card reveal">
-    <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=900&q=85" alt="Royal haveli architecture" loading="lazy">
-    <div class="service-body"><span class="service-number">01 / Design</span><h3>Traditional Haveli Designing</h3><p>Heritage-inspired facades, courtyards, royal entrances and distinctive Rajputana architectural details.</p><a href="#contact">Discuss This Service ↗</a></div>
-   </article>
-   <article class="service-card reveal">
-    <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=900&q=85" alt="Heritage building facade" loading="lazy">
-    <div class="service-body"><span class="service-number">02 / Architecture</span><h3>Heritage Architecture</h3><p>Traditional architectural concepts inspired by historic palaces, havelis, arches and chhatris.</p><a href="#contact">Discuss This Service ↗</a></div>
-   </article>
-   <article class="service-card reveal">
-    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Heritage inspired interior details" loading="lazy">
-    <div class="service-body"><span class="service-number">03 / Restoration</span><h3>Heritage Restoration</h3><p>Explore restoration and renovation concepts that respect original character, materials and craftsmanship.</p><a href="#contact">Discuss This Service ↗</a></div>
-   </article>
-   <article class="service-card reveal">
-    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Custom luxury architecture" loading="lazy">
-    <div class="service-body"><span class="service-number">04 / Bespoke</span><h3>Custom Heritage Homes</h3><p>Personalised residential concepts that combine modern comfort with traditional architectural identity.</p><a href="#contact">Discuss This Service ↗</a></div>
-   </article>
-   <article class="service-card reveal">
-    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85" alt="Traditional design inspired interior" loading="lazy">
-    <div class="service-body"><span class="service-number">05 / Interiors</span><h3>Heritage Interiors</h3><p>Warm materials, decorative features, traditional motifs and thoughtfully composed interior spaces.</p><a href="#contact">Discuss This Service ↗</a></div>
-   </article>
-   <article class="service-card reveal">
-    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Architectural detailing and design" loading="lazy">
-    <div class="service-body"><span class="service-number">06 / Details</span><h3>Architectural Elements</h3><p>Jharokhas, carved panels, arches, pillars, jalis and other heritage-inspired decorative features.</p><a href="#products">Explore Elements ↗</a></div>
-   </article>
-  </div>
- </div>
+<div class="marquee">“Every carving carries a story. Every haveli preserves a legacy.”</div>
+
+<section id="about">
+<div class="container about-grid">
+<div class="about-image reveal"><img src="https://www.sandscapedesertsafaricampjaisalmer.com/blog/wp-content/uploads/2025/03/patwaon-ki-haveli-jaisalmer.jpg" alt="Patwon Ki Haveli style carved sandstone balconies and traditional jharokhas" loading="lazy"></div>
+<div class="about-copy reveal">
+<div class="eyebrow">Our story · Our heritage</div>
+<h2>Inspired by the <span class="gold">Royal Art</span> of Rajasthan.</h2>
+<p>HK Heritage Works celebrates traditional Rajputana architecture and the craftsmanship that gives historic Indian buildings their distinctive character.</p>
+<p>Our design inspiration comes from carved sandstone facades, ornate jharokhas, geometric stone jalis, traditional arches, chhatris, decorative pillars and heritage surface detailing.</p>
+<p>Whether you are exploring a new haveli concept, a heritage-inspired facade or decorative architectural elements, we invite you to discuss your vision with us.</p>
+<div class="mini-features"><div><b>✦</b> Traditional Haveli Design</div><div><b>✦</b> Carved Stone Details</div><div><b>✦</b> Heritage Jali & Jharokha</div><div><b>✦</b> Rajputana Inspiration</div></div>
+<a class="btn outline" href="#services">Discover Our Services ↗</a>
+</div>
+</div>
 </section>
 
-<section class="section" id="projects">
- <div class="container">
-  <div class="section-head reveal">
-   <div class="eyebrow">A glimpse of our world</div>
-   <h2>The Art of <span class="gold">Heritage</span></h2>
-   <p>Explore the architectural language that inspires our work, from ornate facades to timeless courtyards and intricate details.</p>
-  </div>
-  <div class="projects-grid">
-   <article class="project reveal">
-    <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=1100&q=85" alt="Traditional Indian palace" loading="lazy">
-    <div class="project-label"><span>Royal architecture</span><h3>Grand Haveli Facades</h3></div>
-   </article>
-   <article class="project reveal">
-    <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=850&q=85" alt="Indian heritage building" loading="lazy">
-    <div class="project-label"><span>Architectural form</span><h3>Royal Entrances</h3></div>
-   </article>
-   <article class="project reveal">
-    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=850&q=85" alt="Refined traditional inspired interiors" loading="lazy">
-    <div class="project-label"><span>Interior details</span><h3>Heritage Living</h3></div>
-   </article>
-   <article class="project reveal">
-    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=850&q=85" alt="Elegant architectural design" loading="lazy">
-    <div class="project-label"><span>Modern meets tradition</span><h3>Timeless Spaces</h3></div>
-   </article>
-   <article class="project reveal">
-    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=850&q=85" alt="Warm luxury interior" loading="lazy">
-    <div class="project-label"><span>Design inspiration</span><h3>Artisan Details</h3></div>
-   </article>
-  </div>
-  <p class="gallery-note">These images illustrate our design inspiration and are not represented as verified HK Heritage Works projects.</p>
- </div>
+<section class="services" id="services">
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">Our heritage specialities</div><h2>Crafting the <span class="gold">Language of Heritage</span></h2><p>Traditional architectural elements and heritage-inspired design, shaped by the visual richness of Rajasthan's historic buildings.</p></div>
+<div class="service-grid">
+<article class="service reveal"><img src="https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg" alt="Carved sandstone jharokha and jali facade" loading="lazy"><div class="service-copy"><small>01 · HAVELI ARCHITECTURE</small><h3>Traditional Haveli Design</h3><p>Royal facades, courtyards, ornate balconies and traditional architectural compositions.</p><a href="#contact">Discuss Your Haveli ↗</a></div></article>
+<article class="service reveal"><img src="https://chithraarchdesign.com/wp-content/uploads/2025/11/jharokhas_haveli_house_chithraarchdesign_elevation_design1.jpg" alt="Traditional jharokha balcony with ornate stone carving" loading="lazy"><div class="service-copy"><small>02 · JHAROKHA ART</small><h3>Heritage Jharokhas</h3><p>Traditional projecting windows, scalloped arches, ornamental brackets and carved balconies.</p><a href="#products">Explore Jharokhas ↗</a></div></article>
+<article class="service reveal"><img src="https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg" alt="Geometric sandstone jali patterns in heritage architecture" loading="lazy"><div class="service-copy"><small>03 · STONE LATTICE</small><h3>Heritage Stone Jali</h3><p>Intricate geometric and floral latticework inspired by traditional sandstone screens.</p><a href="#contact">Enquire About Jali ↗</a></div></article>
+<article class="service reveal"><img src="https://www.arizonahandbook.com/images/PA270183a.jpg" alt="Rajputana stone pillars, carved railings and chhatris" loading="lazy"><div class="service-copy"><small>04 · STONE CRAFT</small><h3>Carved Stone Work</h3><p>Heritage-inspired stone pillars, brackets, ornamental railings and carved facade details.</p><a href="#contact">Discuss Stone Work ↗</a></div></article>
+<article class="service reveal"><img src="https://www.sandscapedesertsafaricampjaisalmer.com/blog/wp-content/uploads/2025/03/patwaon-ki-haveli-jaisalmer.jpg" alt="Traditional haveli carved cornices and sandstone mouldings" loading="lazy"><div class="service-copy"><small>05 · ORNAMENTAL DETAIL</small><h3>Heritage Moulding Work</h3><p>Traditional-style cornices, decorative borders, ornamental bands and plaster detailing concepts.</p><a href="#contact">Discuss Mouldings ↗</a></div></article>
+<article class="service reveal"><img src="https://www.arizonahandbook.com/images/PA270183a.jpg" alt="Traditional Rajputana chhatri pavilion with carved columns" loading="lazy"><div class="service-copy"><small>06 · ROYAL STRUCTURES</small><h3>Chhatris, Arches & Pillars</h3><p>Timeless architectural forms inspired by traditional pavilions, gateways and arcades.</p><a href="#contact">Plan a Heritage Feature ↗</a></div></article>
+</div>
+</div>
 </section>
 
-<section class="section products" id="products">
- <div class="container">
-  <div class="section-head reveal">
-   <div class="eyebrow">Details that define an era</div>
-   <h2>Signature <span class="gold">Heritage Elements</span></h2>
-   <p>Discover traditional architectural features that bring depth, artistry and royal character to heritage-inspired spaces.</p>
-  </div>
-  <div class="product-grid">
-   <article class="product-card reveal">
-    <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=650&q=85" alt="Ornate Indian architectural facade" loading="lazy">
-    <div class="product-info"><span>01 · Stone artistry</span><h3>Carved Jharokhas</h3><p>Traditional projecting windows and balconies inspired by Rajasthan's historic facades.</p><a href="#contact" data-product="Carved Jharokhas">Enquire About This ↗</a></div>
-   </article>
-   <article class="product-card reveal">
-    <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?auto=format&fit=crop&w=650&q=85" alt="Palace arches and columns" loading="lazy">
-    <div class="product-info"><span>02 · Royal forms</span><h3>Arches & Pillars</h3><p>Architectural accents inspired by traditional arcades, entrances and palace colonnades.</p><a href="#contact" data-product="Arches and Pillars">Enquire About This ↗</a></div>
-   </article>
-   <article class="product-card reveal">
-    <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=650&q=85" alt="Decorative interior details" loading="lazy">
-    <div class="product-info"><span>03 · Fine detailing</span><h3>Decorative Panels</h3><p>Heritage-inspired wall panels, ornamental details and traditional design accents.</p><a href="#contact" data-product="Decorative Panels">Enquire About This ↗</a></div>
-   </article>
-   <article class="product-card reveal">
-    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=650&q=85" alt="Traditional inspired custom interiors" loading="lazy">
-    <div class="product-info"><span>04 · Custom craft</span><h3>Heritage Entrances</h3><p>Distinctive entrance concepts inspired by traditional doors, gateways and royal facades.</p><a href="#contact" data-product="Heritage Entrances">Enquire About This ↗</a></div>
-   </article>
-  </div>
-  <p class="gallery-note" style="color:#77695a">Product imagery is illustrative. Actual materials, specifications and availability should be confirmed with our team.</p>
- </div>
+<section id="gallery">
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">Heritage architecture gallery</div><h2>The Art of <span class="gold">Rajputana</span></h2><p>A visual celebration of historic havelis, carved sandstone, ornate jharokhas, traditional jali patterns and royal stone architecture.</p></div>
+<div class="gallery-grid">
+<article class="gallery-card reveal"><img src="https://www.sandscapedesertsafaricampjaisalmer.com/blog/wp-content/uploads/2025/03/patwaon-ki-haveli-jaisalmer.jpg" alt="Intricately carved Patwon Ki Haveli sandstone facade" loading="lazy"><div><small>RAJASTHANI HERITAGE</small><h3>Haveli Facades</h3></div></article>
+<article class="gallery-card reveal"><img src="https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg" alt="Heritage jharokha surrounded by carved sandstone jali" loading="lazy"><div><small>ORNAMENTAL CARVING</small><h3>Jharokha & Jali</h3></div></article>
+<article class="gallery-card reveal"><img src="https://chithraarchdesign.com/wp-content/uploads/2025/11/jharokhas_haveli_house_chithraarchdesign_elevation_design1.jpg" alt="Traditional haveli stone balcony with sculpted brackets" loading="lazy"><div><small>HANDCRAFTED DETAILS</small><h3>Carved Balconies</h3></div></article>
+<article class="gallery-card reveal"><img src="https://www.arizonahandbook.com/images/PA270183a.jpg" alt="Traditional sandstone pavilion with Rajputana chhatris" loading="lazy"><div><small>ROYAL STONEWORK</small><h3>Chhatris & Pillars</h3></div></article>
+<article class="gallery-card reveal"><img src="https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg" alt="Close view of heritage geometric lattice and ornamental stonework" loading="lazy"><div><small>TRADITIONAL CRAFT</small><h3>Stone Jali Patterns</h3></div></article>
+</div>
+<p style="text-align:center;font-size:10px;margin-top:22px">Reference imagery showcases heritage architecture and design inspiration; it is not presented as a verified record of HK Heritage Works projects.</p>
+</div>
 </section>
 
-<section class="section">
- <div class="container">
-  <div class="section-head reveal">
-   <div class="eyebrow">From first idea to final detail</div>
-   <h2>A Thoughtful <span class="gold">Process</span></h2>
-   <p>Every heritage project deserves careful attention, clear communication and respect for the details.</p>
-  </div>
-  <div class="process-grid">
-   <div class="process-card reveal"><span class="num">01</span><h3>Understand</h3><p>We discuss your requirements, site, inspiration, budget and the heritage style you envision.</p></div>
-   <div class="process-card reveal"><span class="num">02</span><h3>Conceptualise</h3><p>We explore suitable design directions, architectural features and material possibilities.</p></div>
-   <div class="process-card reveal"><span class="num">03</span><h3>Plan</h3><p>Project scope, specifications, timelines and responsibilities are discussed before work begins.</p></div>
-   <div class="process-card reveal"><span class="num">04</span><h3>Bring It to Life</h3><p>Move forward with an agreed project plan and a focus on thoughtful execution and detail.</p></div>
-  </div>
- </div>
+<section class="products" id="products">
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">Traditional architectural elements</div><h2>Heritage <span class="gold">Elements & Craft</span></h2><p>Discuss custom heritage-inspired architectural details for your haveli, facade, restoration or decorative project.</p></div>
+<div class="product-grid">
+<article class="product reveal"><img src="https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg" alt="Traditional carved sandstone jharokha" loading="lazy"><div class="product-info"><small>01 · WINDOW ART</small><h3>Carved Jharokhas</h3><p>Ornamental windows and balconies inspired by historic Rajasthan.</p><a href="#contact" data-service="Heritage Jharokhas">Enquire About Jharokhas ↗</a></div></article>
+<article class="product reveal"><img src="https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg" alt="Geometric carved stone jali screen" loading="lazy"><div class="product-info"><small>02 · LATTICE ART</small><h3>Stone Jali</h3><p>Geometric and floral lattice concepts inspired by heritage stone screens.</p><a href="#contact" data-service="Heritage Stone Jali">Enquire About Jali ↗</a></div></article>
+<article class="product reveal"><img src="https://www.arizonahandbook.com/images/PA270183a.jpg" alt="Traditional carved sandstone pillars and chhatri" loading="lazy"><div class="product-info"><small>03 · STONE DETAIL</small><h3>Heritage Pillars</h3><p>Traditional columns, brackets and carved stone architectural features.</p><a href="#contact" data-service="Carved Stone Work">Enquire About Stonework ↗</a></div></article>
+<article class="product reveal"><img src="https://www.sandscapedesertsafaricampjaisalmer.com/blog/wp-content/uploads/2025/03/patwaon-ki-haveli-jaisalmer.jpg" alt="Traditional sandstone haveli mouldings and decorative cornices" loading="lazy"><div class="product-info"><small>04 · ORNAMENTAL FINISH</small><h3>Heritage Mouldings</h3><p>Decorative cornices, plaster borders and traditional facade detailing.</p><a href="#contact" data-service="Heritage Moulding Work">Enquire About Mouldings ↗</a></div></article>
+</div>
+</div>
 </section>
 
-<section class="quote-band">
- <div class="quote-inner reveal">
-  <div class="quote-mark">“</div>
-  <h2>Some buildings offer shelter. Others preserve the spirit of an entire era.</h2>
-  <p>HK Heritage Works · Inspired by Rajputana</p>
- </div>
+<section>
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">Details make the difference</div><h2>Traditional <span class="gold">Craftsmanship</span></h2><p>From the larger haveli facade to the smallest carved detail, heritage architecture is defined by its materials, proportions and patterns.</p></div>
+<div class="craft-grid">
+<article class="craft reveal"><img src="https://cdn.magicdecor.in/com/2024/11/11191523/Jaisalmer-Haveli-Jharokha-Wallpaper-Mural.jpg" alt="Detailed heritage sandstone carving and lattice patterns" loading="lazy"><h3>Stone Carving & Jali</h3><p>Floral motifs, geometric screens, sculpted borders and traditional sandstone ornamentation.</p></article>
+<article class="craft reveal"><img src="https://chithraarchdesign.com/wp-content/uploads/2025/11/jharokhas_haveli_house_chithraarchdesign_elevation_design1.jpg" alt="Carved jharokha brackets and traditional haveli detailing" loading="lazy"><h3>Jharokha & Brackets</h3><p>Ornamental balconies, carved supports, scalloped arches and heritage-inspired projections.</p></article>
+<article class="craft reveal"><img src="https://www.arizonahandbook.com/images/PA270183a.jpg" alt="Traditional sandstone columns, chhatris and carved balustrades" loading="lazy"><h3>Stone Pillars & Chhatris</h3><p>Classic pavilions, columned structures and traditional architectural silhouettes.</p></article>
+</div>
+</div>
 </section>
 
-<section class="section why" id="why-us">
- <div class="container why-grid">
-  <div class="why-photo reveal">
-   <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=1000&q=85" alt="Traditional architecture with heritage detailing" loading="lazy">
-  </div>
-  <div class="why-copy reveal">
-   <div class="eyebrow">The HK approach</div>
-   <h2>Heritage Is More Than a <span class="gold">Style.</span></h2>
-   <p>It is a way of preserving identity, celebrating artisanship and creating spaces with a lasting sense of belonging.</p>
-   <div class="why-row"><span class="why-icon">✦</span><div><h3>Rooted in Tradition</h3><p>Design inspiration drawn from Rajputana architecture and India's rich building heritage.</p></div></div>
-   <div class="why-row"><span class="why-icon">◇</span><div><h3>Attention to Detail</h3><p>A focus on the proportions, textures, patterns and decorative elements that shape a space.</p></div></div>
-   <div class="why-row"><span class="why-icon">⌂</span><div><h3>Designed Around You</h3><p>Project discussions shaped by your needs, preferences, site and intended outcome.</p></div></div>
-   <div class="why-row"><span class="why-icon">✧</span><div><h3>Timeless Character</h3><p>Creating heritage-inspired concepts that feel distinctive rather than ordinary.</p></div></div>
-  </div>
- </div>
+<section class="process">
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">From vision to heritage detail</div><h2>A Thoughtful <span class="gold">Process</span></h2><p>Start with your inspiration, define the project scope and discuss the appropriate approach with our team.</p></div>
+<div class="process-grid">
+<div class="process-card reveal"><b>01</b><h3>Share Your Vision</h3><p>Send reference photos, location, approximate dimensions and your desired heritage style.</p></div>
+<div class="process-card reveal"><b>02</b><h3>Discuss the Design</h3><p>Explore suitable haveli elements, stone details, mouldings and architectural concepts.</p></div>
+<div class="process-card reveal"><b>03</b><h3>Confirm the Scope</h3><p>Discuss specifications, materials, budget, feasibility and the expected timeline.</p></div>
+<div class="process-card reveal"><b>04</b><h3>Plan the Next Step</h3><p>Proceed with an agreed project plan and clearly defined responsibilities.</p></div>
+</div>
+</div>
 </section>
 
-<section class="section" id="testimonials">
- <div class="container">
-  <div class="section-head reveal">
-   <div class="eyebrow">Trust begins with a conversation</div>
-   <h2>Built on <span class="gold">Understanding</span></h2>
-   <p>We believe every successful project begins with clear communication, thoughtful planning and shared expectations.</p>
-  </div>
-  <div class="testimonial-grid">
-   <article class="testimonial reveal"><div class="stars">✦ ✦ ✦ ✦ ✦</div><blockquote>“The right architectural details can transform a simple facade into something truly memorable.”</blockquote><div class="person">Our design philosophy</div><small>Heritage-inspired design</small></article>
-   <article class="testimonial reveal"><div class="stars">✦ ✦ ✦ ✦ ✦</div><blockquote>“Understanding the vision, materials and craftsmanship is the foundation of every meaningful space.”</blockquote><div class="person">Our working approach</div><small>Planning and collaboration</small></article>
-   <article class="testimonial reveal"><div class="stars">✦ ✦ ✦ ✦ ✦</div><blockquote>“Tradition lives on when the details, proportions and character of heritage are thoughtfully respected.”</blockquote><div class="person">Our guiding principle</div><small>Inspired by Rajputana</small></article>
-  </div>
-  <p class="gallery-note">The quotes above describe our philosophy; they are not attributed to customers or presented as customer reviews.</p>
- </div>
+<section class="banner">
+<div class="container reveal"><div class="eyebrow">Inspired by centuries of craftsmanship</div><h2>Let Your Next Project Tell a <span class="gold">Heritage Story.</span></h2><p>Traditional Havelis · Jharokhas · Stone Jali · Rajputana Architecture</p><br><a class="btn" href="#contact">Discuss Your Heritage Project ↗</a></div>
 </section>
 
-<section class="section faq" id="faq">
- <div class="container">
-  <div class="section-head reveal">
-   <div class="eyebrow">Frequently asked questions</div>
-   <h2>Things You May <span class="gold">Want to Know</span></h2>
-   <p>Some helpful starting points before discussing your heritage project.</p>
-  </div>
-  <div class="faq-wrap">
-   <div class="faq-item open"><button class="faq-question" aria-expanded="true"><span>What types of projects do you work on?</span><span>+</span></button><div class="faq-answer">HK Heritage Works focuses on traditional haveli design, heritage-inspired architecture, decorative architectural elements and related design enquiries. Contact us to confirm whether your particular project fits our services.</div></div>
-   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Can I customise a haveli design?</span><span>+</span></button><div class="faq-answer">Yes, you can discuss your preferred architectural style, site conditions, requirements and budget with us. The available design and execution options depend on the scope of your project.</div></div>
-   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Do you work on restoration projects?</span><span>+</span></button><div class="faq-answer">We welcome enquiries about heritage restoration and renovation concepts. The scope, feasibility and appropriate conservation approach should be established after discussing the existing building and its condition.</div></div>
-   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>Can I enquire about individual heritage elements?</span><span>+</span></button><div class="faq-answer">You can enquire about jharokhas, arches, pillars, decorative panels and heritage-inspired entrances. Please share your requirements and reference images so the team can discuss suitable options.</div></div>
-   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>How do I get a quotation?</span><span>+</span></button><div class="faq-answer">Call or WhatsApp us at +91 96020 79610. Share your project location, approximate dimensions, requirements, reference photographs and expected timeline. A quotation can be discussed after the project scope is understood.</div></div>
-   <div class="faq-item"><button class="faq-question" aria-expanded="false"><span>How can I start a project discussion?</span><span>+</span></button><div class="faq-answer">Use the enquiry form below or contact us directly on WhatsApp. Include your name, preferred contact details and a short description of the project.</div></div>
-  </div>
- </div>
+<section id="why">
+<div class="container why-grid">
+<div class="why-image reveal"><img src="https://www.sandscapedesertsafaricampjaisalmer.com/blog/wp-content/uploads/2025/03/patwaon-ki-haveli-jaisalmer.jpg" alt="Traditional Rajputana heritage haveli with ornate sandstone balconies" loading="lazy"></div>
+<div class="why-copy reveal"><div class="eyebrow">Our design philosophy</div><h2>Preserving the Spirit of <span class="gold">Heritage.</span></h2><p>Heritage is not simply an appearance. It is the relationship between materials, craftsmanship, proportion and cultural identity.</p>
+<div class="why-item"><h3>Rooted in Rajputana</h3><p>Architectural inspiration from Rajasthan's traditional havelis, jharokhas and stone facades.</p></div>
+<div class="why-item"><h3>Respect for Craft</h3><p>A focus on decorative details, traditional patterns, carved surfaces and ornamental forms.</p></div>
+<div class="why-item"><h3>Project-Specific Approach</h3><p>Design discussions shaped by your site, requirements, material preferences and intended use.</p></div>
+<div class="why-item"><h3>Clarity Before Execution</h3><p>Scope, feasibility, specifications and commercial terms should be discussed before work begins.</p></div>
+</div>
+</div>
 </section>
 
-<section class="section" id="contact">
- <div class="container contact-grid">
-  <div class="contact-copy reveal">
-   <div class="eyebrow">Let's create something timeless</div>
-   <h2>Have a Vision?<br><span class="gold">Let's Discuss.</span></h2>
-   <p>Planning a traditional haveli, a heritage-inspired home or a custom architectural feature? Tell us a little about your vision.</p>
-   <div class="contact-detail"><span>Call Us</span><a href="tel:+919602079610">+91 96020 79610</a></div>
-   <div class="contact-detail"><span>WhatsApp</span><a href="https://wa.me/919602079610" target="_blank" rel="noopener">Chat with HK Heritage Works ↗</a></div>
-   <div class="contact-detail"><span>Instagram</span><a href="https://www.instagram.com/hk_heritagework/" target="_blank" rel="noopener">@hk_heritagework ↗</a></div>
-   <div class="contact-detail"><span>YouTube</span><a href="https://www.youtube.com/@heritagejarokhawork" target="_blank" rel="noopener">Heritage Jarokha Work ↗</a></div>
-  </div>
-  <form class="contact-form reveal" id="contactForm">
-   <h3>Tell Us About Your Project</h3>
-   <div class="form-grid">
-    <div class="field"><label for="name">Your Name *</label><input id="name" name="name" placeholder="Enter your name" required></div>
-    <div class="field"><label for="phone">Phone Number *</label><input id="phone" name="phone" type="tel" placeholder="Your contact number" required></div>
-    <div class="field full"><label for="service">Service of Interest</label>
-     <select id="service" name="service">
-      <option value="Traditional Haveli Designing">Traditional Haveli Designing</option>
-      <option value="Heritage Architecture">Heritage Architecture</option>
-      <option value="Heritage Restoration">Heritage Restoration</option>
-      <option value="Heritage Interiors">Heritage Interiors</option>
-      <option value="Jharokhas, Arches and Architectural Elements">Jharokhas, Arches & Elements</option>
-      <option value="Other Project">Other Project</option>
-     </select>
-    </div>
-    <div class="field full"><label for="location">Project Location</label><input id="location" name="location" placeholder="City / Town / Site location"></div>
-    <div class="field full"><label for="message">Your Requirements *</label><textarea id="message" name="message" placeholder="Describe your project, preferred style and requirements..." required></textarea></div>
-   </div>
-   <button class="btn" type="submit">Send Enquiry on WhatsApp ↗</button>
-   <p class="form-hint">This form opens WhatsApp with your enquiry prepared for you to review and send. It does not store submissions on a server.</p>
-  </form>
- </div>
+<section class="faq" id="faq">
+<div class="container">
+<div class="section-head reveal"><div class="eyebrow">Frequently asked questions</div><h2>Heritage Project <span class="gold">FAQs</span></h2><p>Answers to common questions about traditional architectural features and project enquiries.</p></div>
+<div class="faq-wrap">
+<div class="faq-item open"><button class="faq-q" aria-expanded="true">What heritage services can I enquire about?<span>+</span></button><div class="faq-a">You can enquire about traditional haveli design, heritage-inspired facades, carved jharokhas, stone jali, sandstone details, pillars, arches, chhatris and ornamental moulding concepts.</div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Can I request a customised heritage jharokha?<span>+</span></button><div class="faq-a">You can share reference photographs, preferred dimensions and your design requirements so the team can discuss suitable options and feasibility.</div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Do you accept stone jali and carving enquiries?<span>+</span></button><div class="faq-a">You can contact HK Heritage Works to discuss the desired pattern, material, dimensions and whether the requested work is within the available service scope.</div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Can I ask about traditional cement or plaster mouldings?<span>+</span></button><div class="faq-a">Yes, you can enquire about heritage-inspired cornices, decorative borders, ornamental plasterwork and facade detailing. Exact methods and availability need to be confirmed for your project.</div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">How do I get a project quotation?<span>+</span></button><div class="faq-a">Call or WhatsApp +91 96020 79610. Share your location, measurements, reference images, requirements and expected timeline. Pricing can be discussed once the scope is understood.</div></div>
+<div class="faq-item"><button class="faq-q" aria-expanded="false">Are the photographs shown actual HK Heritage Works projects?<span>+</span></button><div class="faq-a">The gallery uses heritage architecture reference photographs to communicate the style and craftsmanship. They are not represented as verified projects completed by HK Heritage Works.</div></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact-grid">
+<div class="contact-copy reveal"><div class="eyebrow">Let's discuss your vision</div><h2>Bring Your <span class="gold">Heritage Idea</span> to Life.</h2><p>Planning a traditional haveli, carved jharokha, stone jali, decorative moulding or heritage facade? Share your requirements with us.</p>
+<div class="detail"><small>CALL US</small><a href="tel:+919602079610">+91 96020 79610</a></div>
+<div class="detail"><small>WHATSAPP</small><a href="https://wa.me/919602079610" target="_blank" rel="noopener">Chat with HK Heritage Works ↗</a></div>
+<div class="detail"><small>INSTAGRAM</small><a href="https://www.instagram.com/hk_heritagework/" target="_blank" rel="noopener">@hk_heritagework ↗</a></div>
+<div class="detail"><small>YOUTUBE</small><a href="https://www.youtube.com/@heritagejarokhawork" target="_blank" rel="noopener">Heritage Jarokha Work ↗</a></div>
+</div>
+<form class="contact-form reveal" id="contactForm"><h3>Heritage Project Enquiry</h3>
+<div class="form-grid">
+<div class="field"><label for="name">Your Name *</label><input id="name" name="name" required placeholder="Full name"></div>
+<div class="field"><label for="phone">Your Phone *</label><input id="phone" name="phone" required type="tel" placeholder="Contact number"></div>
+<div class="field full"><label for="service">Heritage Service</label><select id="service" name="service">
+<option>Traditional Haveli Design</option><option>Heritage Jharokhas</option><option>Heritage Stone Jali</option><option>Carved Stone Work</option><option>Heritage Moulding Work</option><option>Chhatris, Arches & Pillars</option><option>Heritage Restoration</option><option>Other Heritage Project</option>
+</select></div>
+<div class="field full"><label for="location">Project Location</label><input id="location" name="location" placeholder="City / site location"></div>
+<div class="field full"><label for="message">Project Details *</label><textarea id="message" name="message" required placeholder="Dimensions, material, design and requirements"></textarea></div>
+</div>
+<button class="btn" type="submit">Send Enquiry on WhatsApp ↗</button>
+<p class="form-note">Your enquiry will open in WhatsApp for you to review and send. This website does not store form submissions.</p>
+</form>
+</div>
 </section>
 </main>
 
-<footer>
- <div class="container">
-  <div class="footer-main">
-   <div class="footer-about">
-    <a class="brand" href="#home"><span class="brand-mark">HK</span><span class="brand-name">HK HERITAGE<small>WORKS · RAJPUTANA HERITAGE</small></span></a>
-    <p>Celebrating traditional haveli design, Rajputana architecture and the timeless beauty of Indian heritage through thoughtful design and craftsmanship.</p>
-   </div>
-   <div class="footer-col"><h3>Explore</h3><a href="#about">Our Story</a><a href="#services">Our Services</a><a href="#projects">Heritage Gallery</a><a href="#products">Heritage Elements</a><a href="#faq">FAQs</a></div>
-   <div class="footer-col"><h3>Get in Touch</h3><a href="tel:+919602079610">+91 96020 79610</a><a href="https://wa.me/919602079610" target="_blank" rel="noopener">WhatsApp Us ↗</a><a href="https://www.instagram.com/hk_heritagework/" target="_blank" rel="noopener">Instagram ↗</a><a href="#contact">Project Enquiry</a></div>
-  </div>
-  <div class="footer-bottom"><span>© <span id="year"></span> HK Heritage Works. All rights reserved.</span><span>Designed with respect for <strong>Rajputana Heritage.</strong></span></div>
- </div>
-</footer>
+<footer><div class="container">
+<div class="footer-grid">
+<div><a class="brand" href="#home"><span class="brand-logo">HK</span><span class="brand-name">HK HERITAGE<small>WORKS · RAJPUTANA CRAFT</small></span></a><p>Traditional haveli design, heritage jharokhas, carved stone jali and architectural details inspired by Rajasthan's rich cultural legacy.</p></div>
+<div><h3>Explore</h3><a href="#about">Our Heritage</a><a href="#services">Heritage Services</a><a href="#gallery">Architecture Gallery</a><a href="#products">Heritage Elements</a><a href="#faq">FAQs</a></div>
+<div><h3>Contact</h3><a href="tel:+919602079610">+91 96020 79610</a><a href="https://wa.me/919602079610" target="_blank" rel="noopener">WhatsApp ↗</a><a href="https://www.instagram.com/hk_heritagework/" target="_blank" rel="noopener">Instagram ↗</a><a href="#contact">Project Enquiry</a></div>
+</div>
+<div class="footer-bottom"><span>© <span id="year"></span> HK Heritage Works. All rights reserved.</span><span>Designed with respect for <span class="gold">Rajputana Heritage.</span></span></div>
+</div></footer>
 
-<div class="float-actions" aria-label="Quick contact">
- <a class="float-btn float-wa" href="https://wa.me/919602079610?text=Namaste%20HK%20Heritage%20Works%2C%20I%20would%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="WhatsApp">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.8 11.8 0 0 0 12.1 0C5.55 0 .22 5.33.22 11.88c0 2.09.55 4.14 1.59 5.94L.12 24l6.33-1.66a11.9 11.9 0 0 0 5.65 1.44h.01c6.55 0 11.88-5.33 11.88-11.88a11.8 11.8 0 0 0-3.47-8.42ZM12.11 21.77a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.76.99 1-3.66-.24-.38a9.86 9.86 0 1 1 8.41 4.64Zm5.42-7.39c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.51-1.78-1.69-2.08-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.3 1.27.48 1.7.61.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35Z"/></svg>
- </a>
- <a class="float-btn float-call" href="tel:+919602079610" aria-label="Call HK Heritage Works" title="Call Us">
-  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.25 1.02l-2.2 2.21Z"/></svg>
- </a>
+<div class="float-actions">
+<a class="wa" href="https://wa.me/919602079610?text=Namaste%20HK%20Heritage%20Works%2C%20I%20want%20to%20discuss%20a%20heritage%20project." target="_blank" rel="noopener" aria-label="WhatsApp HK Heritage Works" title="WhatsApp">◉</a>
+<a class="call" href="tel:+919602079610" aria-label="Call HK Heritage Works" title="Call">☎</a>
 </div>
 
 <script>
-(function(){
- const header=document.getElementById('header');
- const menuBtn=document.getElementById('menuBtn');
- const navLinks=document.getElementById('navLinks');
+const header=document.getElementById('header');
+window.addEventListener('scroll',()=>header.classList.toggle('scrolled',window.scrollY>100),{passive:true});
 
- function updateHeader(){
-   header.classList.toggle('scrolled',window.scrollY>100);
- }
- window.addEventListener('scroll',updateHeader,{passive:true});
- updateHeader();
+const menu=document.getElementById('menu');
+const navlinks=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{
+ const open=navlinks.classList.toggle('open');
+ menu.setAttribute('aria-expanded',String(open));
+ menu.textContent=open?'✕ Close':'☰ Menu';
+});
+navlinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+ navlinks.classList.remove('open');
+ menu.setAttribute('aria-expanded','false');
+ menu.textContent='☰ Menu';
+}));
 
- menuBtn.addEventListener('click',()=>{
-   const opened=navLinks.classList.toggle('open');
-   menuBtn.setAttribute('aria-expanded',String(opened));
-   menuBtn.textContent=opened?'✕ Close':'☰ Menu';
+const slides=[...document.querySelectorAll('#heroImages img')];
+let slide=0,timer;
+function showSlide(i){
+ slide=(i+slides.length)%slides.length;
+ slides.forEach((img,n)=>img.classList.toggle('active',n===slide));
+ document.getElementById('slideCount').textContent=
+ String(slide+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
+}
+function restartSlides(){clearInterval(timer);timer=setInterval(()=>showSlide(slide+1),6500)}
+document.getElementById('prev').addEventListener('click',()=>{showSlide(slide-1);restartSlides()});
+document.getElementById('next').addEventListener('click',()=>{showSlide(slide+1);restartSlides()});
+restartSlides();
+
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>{
+ const item=btn.closest('.faq-item');
+ const open=item.classList.toggle('open');
+ btn.setAttribute('aria-expanded',String(open));
+}));
+
+const observer=new IntersectionObserver(entries=>{
+ entries.forEach(entry=>{
+  if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}
  });
- navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
-   navLinks.classList.remove('open');
-   menuBtn.setAttribute('aria-expanded','false');
-   menuBtn.textContent='☰ Menu';
- }));
+},{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 
- const slides=[...document.querySelectorAll('#heroBg img')];
- const count=document.getElementById('heroCount');
- let current=0,timer;
- function showSlide(index){
-   current=(index+slides.length)%slides.length;
-   slides.forEach((img,i)=>img.classList.toggle('active',i===current));
-   count.textContent=String(current+1).padStart(2,'0')+' / '+String(slides.length).padStart(2,'0');
- }
- function restart(){
-   clearInterval(timer);
-   timer=setInterval(()=>showSlide(current+1),6000);
- }
- document.getElementById('prevSlide').addEventListener('click',()=>{showSlide(current-1);restart()});
- document.getElementById('nextSlide').addEventListener('click',()=>{showSlide(current+1);restart()});
- restart();
-
- document.querySelectorAll('.faq-question').forEach(button=>{
-   button.addEventListener('click',()=>{
-     const item=button.closest('.faq-item');
-     const open=item.classList.toggle('open');
-     button.setAttribute('aria-expanded',String(open));
-   });
+document.querySelectorAll('[data-service]').forEach(link=>{
+ link.addEventListener('click',()=>{
+  const select=document.getElementById('service');
+  const option=[...select.options].find(o=>o.text===link.dataset.service);
+  if(option)select.value=option.value;
  });
+});
 
- const observer=new IntersectionObserver(entries=>{
-   entries.forEach(entry=>{
-     if(entry.isIntersecting){
-       entry.target.classList.add('visible');
-       observer.unobserve(entry.target);
-     }
-   });
- },{threshold:.12});
- document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
-
- document.querySelectorAll('[data-product]').forEach(link=>{
-   link.addEventListener('click',()=>{
-     const select=document.getElementById('service');
-     const product=link.dataset.product;
-     const option=[...select.options].find(o=>o.text.toLowerCase().includes(product.toLowerCase()));
-     if(option)select.value=option.value;
-     else select.value='Other Project';
-   });
- });
-
- document.getElementById('contactForm').addEventListener('submit',function(e){
-   e.preventDefault();
-   if(!this.reportValidity())return;
-   const data=new FormData(this);
-   const name=String(data.get('name')||'').trim();
-   const phone=String(data.get('phone')||'').trim();
-   const service=String(data.get('service')||'');
-   const location=String(data.get('location')||'').trim();
-   const message=String(data.get('message')||'').trim();
-   const text=
-`Namaste HK Heritage Works,
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const form=e.currentTarget;
+ if(!form.reportValidity())return;
+ const d=new FormData(form);
+ const text=`Namaste HK Heritage Works,
 
 I would like to enquire about a heritage project.
 
-Name: ${name}
-My Phone: ${phone}
-Service: ${service}
-Project Location: ${location||'Not specified'}
+Name: ${d.get('name')}
+Phone: ${d.get('phone')}
+Service: ${d.get('service')}
+Location: ${d.get('location')||'Not specified'}
 
-Requirements:
-${message}
+Project Details:
+${d.get('message')}
 
-Please contact me to discuss the project.`;
-   const url='https://wa.me/919602079610?text='+encodeURIComponent(text);
-   window.open(url,'_blank','noopener,noreferrer');
- });
- document.getElementById('year').textContent=new Date().getFullYear();
-})();
+Please contact me to discuss the requirements.`;
+ window.open('https://wa.me/919602079610?text='+encodeURIComponent(text),'_blank');
+});
+document.getElementById('year').textContent=new Date().getFullYear();
 </script>
 </body>
 </html>
